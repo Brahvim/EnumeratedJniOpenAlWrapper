@@ -43,19 +43,20 @@ public class ConstantsParser {
                 if (inCommmentToCopy) {
                     lineWriter.write(line);
                     lineWriter.newLine();
-                    if (endOfComment)
-                        lineWriter.newLine();
-                    lineWriter.flush();
                 }
 
                 if (line.contains("#define")) {
                     final String macroDef = line.split("#define")[1].strip();
-                    final String[] macroDefAndValue = macroDef.split(" ");
-                    final String macroName = macroDefAndValue[0],
+                    final int firstSpace = macroDef.indexOf(' ');
+
+                    if (firstSpace == -1)
+                        continue;
+
+                    final String macroName = macroDef.substring(0, firstSpace),
                             // If the macro ahs a value, we get it!:
-                            macroValue = macroDefAndValue.length == 2
-                                    ? macroDefAndValue[1].trim()
-                                    : null;
+                            macroValue = firstSpace == line.length()
+                                    ? null
+                                    : macroDef.substring(macroDef.lastIndexOf(' ')).trim();
 
                     if (macroValue == null)
                         continue;
@@ -66,7 +67,7 @@ public class ConstantsParser {
                     lineWriter.write(macroValue);
                     lineWriter.write(';');
                     lineWriter.newLine();
-                    lineWriter.flush();
+                    lineWriter.newLine();
                 }
             }
         } catch (final Exception e) {

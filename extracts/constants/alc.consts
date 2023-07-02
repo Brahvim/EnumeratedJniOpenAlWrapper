@@ -1,77 +1,88 @@
 public final static int ALC_API = __declspec(dllimport);
+
 public final static int ALC_API = extern;
+
 public final static int ALC_APIENTRY = __cdecl;
+
 /* Deprecated macros. */
+public final static int ALCAPI = ALC_API;
+
+public final static int ALCAPIENTRY = ALC_APIENTRY;
+
+public final static int ALC_INVALID = 0;
 
 /** Supported ALC version? */
+public final static int ALC_VERSION_0_1 = 1;
 
 /** Opaque device handle */
-
 /** Opaque context handle */
-
 /** 8-bit boolean */
-
 /** character */
-
 /** signed 8-bit integer */
-
 /** unsigned 8-bit integer */
-
 /** signed 16-bit integer */
-
 /** unsigned 16-bit integer */
-
 /** signed 32-bit integer */
-
 /** unsigned 32-bit integer */
-
 /** non-negative 32-bit integer size */
-
 /** 32-bit enumeration value */
-
 /** 32-bit IEEE-754 floating-point */
-
 /** 64-bit IEEE-754 floating-point */
-
 /** void type (for opaque pointers only) */
-
 /* Enumeration values begin at column 50. Do not use tabs. */
-
 /** Boolean False. */
+public final static int ALC_FALSE = 0;
 
 /** Boolean True. */
+public final static int ALC_TRUE = 1;
 
 /** Context attribute: <int> Hz. */
+public final static int ALC_FREQUENCY = 0x1007;
 
 /** Context attribute: <int> Hz. */
+public final static int ALC_REFRESH = 0x1008;
 
 /** Context attribute: AL_TRUE or AL_FALSE synchronous context? */
+public final static int ALC_SYNC = 0x1009;
 
 /** Context attribute: <int> requested Mono (3D) Sources. */
+public final static int ALC_MONO_SOURCES = 0x1010;
 
 /** Context attribute: <int> requested Stereo Sources. */
+public final static int ALC_STEREO_SOURCES = 0x1011;
 
 /** No error. */
+public final static int ALC_NO_ERROR = 0;
 
 /** Invalid device handle. */
+public final static int ALC_INVALID_DEVICE = 0xA001;
 
 /** Invalid context handle. */
+public final static int ALC_INVALID_CONTEXT = 0xA002;
 
 /** Invalid enumeration passed to an ALC call. */
+public final static int ALC_INVALID_ENUM = 0xA003;
 
 /** Invalid value passed to an ALC call. */
+public final static int ALC_INVALID_VALUE = 0xA004;
 
 /** Out of memory. */
+public final static int ALC_OUT_OF_MEMORY = 0xA005;
 
 /** Runtime ALC major version. */
+public final static int ALC_MAJOR_VERSION = 0x1000;
 
 /** Runtime ALC minor version. */
+public final static int ALC_MINOR_VERSION = 0x1001;
 
 /** Context attribute list size. */
+public final static int ALC_ATTRIBUTES_SIZE = 0x1002;
 
 /** Context attribute list properties. */
+public final static int ALC_ALL_ATTRIBUTES = 0x1003;
 
 /** String for the default device specifier. */
+public final static int ALC_DEFAULT_DEVICE_SPECIFIER = 0x1004;
 
 /**
  * Device specifier string.
@@ -79,27 +90,33 @@ public final static int ALC_APIENTRY = __cdecl;
  * If device handle is NULL, it is instead a null-character separated list of
  * strings of known device specifiers (list ends with an empty string).
  */
+public final static int ALC_DEVICE_SPECIFIER = 0x1005;
 
 /** String for space-separated list of ALC extensions. */
+public final static int ALC_EXTENSIONS = 0x1006;
 
 /** Capture extension */
-
 public final static int ALC_EXT_CAPTURE = 1;
+
 /**
  * Capture device specifier string.
  *
  * If device handle is NULL, it is instead a null-character separated list of
  * strings of known capture device specifiers (list ends with an empty string).
  */
+public final static int ALC_CAPTURE_DEVICE_SPECIFIER = 0x310;
 
 /** String for the default capture device specifier. */
+public final static int ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER = 0x311;
 
 /** Number of sample frames available for capture. */
+public final static int ALC_CAPTURE_SAMPLES = 0x312;
 
 /** Enumerate All extension */
-
 public final static int ALC_ENUMERATE_ALL_EXT = 1;
+
 /** String for the default extended device specifier. */
+public final static int ALC_DEFAULT_ALL_DEVICES_SPECIFIER = 0x1012;
 
 /**
  * Device's extended specifier string.
@@ -107,75 +124,49 @@ public final static int ALC_ENUMERATE_ALL_EXT = 1;
  * If device handle is NULL, it is instead a null-character separated list of
  * strings of known extended device specifiers (list ends with an empty string).
  */
+public final static int ALC_ALL_DEVICES_SPECIFIER = 0x1013;
 
 /* Context management. */
-
 /** Create and attach a context to the given device. */
-
 /**
  * Makes the given context the active process-wide context. Passing NULL clears
  * the active context.
  */
-
 /** Resumes processing updates for the given context. */
-
 /** Suspends updates for the given context. */
-
 /** Remove a context from its device and destroys it. */
-
 /** Returns the currently active context. */
-
 /** Returns the device that a particular context is attached to. */
-
 /* Device management. */
-
 /** Opens the named playback device. */
-
 /** Closes the given playback device. */
-
 /* Error support. */
-
 /** Obtain the most recent Device error. */
-
 /* Extension support. */
-
 /**
  * Query for the presence of an extension on the device. Pass a NULL device to
  * query a device-inspecific extension.
  */
-
 /**
  * Retrieve the address of a function. Given a non-NULL device, the returned
  * function may be device-specific.
  */
-
 /**
  * Retrieve the value of an enum. Given a non-NULL device, the returned value
  * may be device-specific.
  */
-
 /* Query functions. */
-
 /** Returns information about the device, and error strings. */
-
 /** Returns information about the device and the version of OpenAL. */
-
 /* Capture functions. */
-
 /**
  * Opens the named capture device with the given frequency, format, and buffer
  * size.
  */
-
 /** Closes the given capture device. */
-
 /** Starts capturing samples into the device buffer. */
-
 /** Stops capturing samples. Samples in the device buffer remain available. */
-
 /** Reads samples from the device buffer. */
-
 /* Pointer-to-function types, useful for storing dynamically loaded ALC entry
  * points.
  */
-

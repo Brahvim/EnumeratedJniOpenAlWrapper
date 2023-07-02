@@ -1,43 +1,43 @@
 public final static int AL_API = __declspec(dllimport);
+
 public final static int AL_API = extern;
+
 public final static int AL_APIENTRY = __cdecl;
+
 /* Deprecated macros. */
+public final static int ALAPI = AL_API;
+
+public final static int ALAPIENTRY = AL_APIENTRY;
+
+public final static int AL_INVALID = (-1);
+
+public final static int AL_ILLEGAL_ENUM = AL_INVALID_ENUM;
+
+public final static int AL_ILLEGAL_COMMAND = AL_INVALID_OPERATION;
 
 /* Supported AL versions. */
-
 /** 8-bit boolean */
-
 /** character */
-
 /** signed 8-bit integer */
-
 /** unsigned 8-bit integer */
-
 /** signed 16-bit integer */
-
 /** unsigned 16-bit integer */
-
 /** signed 32-bit integer */
-
 /** unsigned 32-bit integer */
-
 /** non-negative 32-bit integer size */
-
 /** 32-bit enumeration value */
-
 /** 32-bit IEEE-754 floating-point */
-
 /** 64-bit IEEE-754 floating-point */
-
 /** void type (opaque pointers only) */
-
 /* Enumeration values begin at column 50. Do not use tabs. */
-
 /** No distance model or no buffer */
+public final static int AL_NONE = 0;
 
 /** Boolean False. */
+public final static int AL_FALSE = 0;
 
 /** Boolean True. */
+public final static int AL_TRUE = 1;
 
 /**
  * Relative source.
@@ -47,6 +47,7 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * Specifies if the source uses relative coordinates.
  */
+public final static int AL_SOURCE_RELATIVE = 0x202;
 
 /**
  * Inner cone angle, in degrees.
@@ -57,6 +58,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The angle covered by the inner cone, the area within which the source will
  * not be attenuated by direction.
  */
+public final static int AL_CONE_INNER_ANGLE = 0x1001;
 
 /**
  * Outer cone angle, in degrees.
@@ -66,6 +68,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The angle covered by the outer cone, the area outside of which the source
  * will be fully attenuated by direction.
  */
+public final static int AL_CONE_OUTER_ANGLE = 0x1002;
 
 /**
  * Source pitch.
@@ -75,6 +78,7 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * A multiplier for the sample rate of the source's buffer.
  */
+public final static int AL_PITCH = 0x1003;
 
 /**
  * Source or listener position.
@@ -90,6 +94,7 @@ public final static int AL_APIENTRY = __cdecl;
  * To change from or to a left handed coordinate system, negate the Z
  * component.
  */
+public final static int AL_POSITION = 0x1004;
 
 /**
  * Source direction.
@@ -102,6 +107,7 @@ public final static int AL_APIENTRY = __cdecl;
  * To change from or to a left handed coordinate system, negate the Z
  * component.
  */
+public final static int AL_DIRECTION = 0x1005;
 
 /**
  * Source or listener velocity.
@@ -113,6 +119,7 @@ public final static int AL_APIENTRY = __cdecl;
  * To change from or to a left handed coordinate system, negate the Z
  * component.
  */
+public final static int AL_VELOCITY = 0x1006;
 
 /**
  * Source looping.
@@ -122,6 +129,7 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * Specifies whether source playback loops.
  */
+public final static int AL_LOOPING = 0x1007;
 
 /**
  * Source buffer.
@@ -131,6 +139,7 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * Specifies the buffer to provide sound samples for a source.
  */
+public final static int AL_BUFFER = 0x1009;
 
 /**
  * Source or listener gain.
@@ -144,6 +153,7 @@ public final static int AL_APIENTRY = __cdecl;
  * of about -6dB. Each multiplication by 2 equals an amplification of about
  * +6dB.
  */
+public final static int AL_GAIN = 0x100A;
 
 /**
  * Minimum source gain.
@@ -153,6 +163,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The minimum gain allowed for a source, after distance and cone attenuation
  * are applied (if applicable).
  */
+public final static int AL_MIN_GAIN = 0x100D;
 
 /**
  * Maximum source gain.
@@ -162,6 +173,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The maximum gain allowed for a source, after distance and cone attenuation
  * are applied (if applicable).
  */
+public final static int AL_MAX_GAIN = 0x100E;
 
 /**
  * Listener orientation.
@@ -175,14 +187,23 @@ public final static int AL_APIENTRY = __cdecl;
  * To change from or to a left handed coordinate system, negate the Z
  * component of both vectors.
  */
+public final static int AL_ORIENTATION = 0x100F;
 
 /**
  * Source state (query only).
  * Type:  ALenum
  * Range: [AL_INITIAL, AL_PLAYING, AL_PAUSED, AL_STOPPED]
  */
+public final static int AL_SOURCE_STATE = 0x1010;
 
 /* Source state values. */
+public final static int AL_INITIAL = 0x1011;
+
+public final static int AL_PLAYING = 0x1012;
+
+public final static int AL_PAUSED = 0x1013;
+
+public final static int AL_STOPPED = 0x1014;
 
 /**
  * Source Buffer Queue size (query only).
@@ -191,6 +212,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The number of buffers queued using alSourceQueueBuffers, minus the buffers
  * removed with alSourceUnqueueBuffers.
  */
+public final static int AL_BUFFERS_QUEUED = 0x1015;
 
 /**
  * Source Buffer Queue processed count (query only).
@@ -202,6 +224,7 @@ public final static int AL_APIENTRY = __cdecl;
  * Looping sources will never fully process buffers because they will be set to
  * play again for when the source loops.
  */
+public final static int AL_BUFFERS_PROCESSED = 0x1016;
 
 /**
  * Source reference distance.
@@ -213,6 +236,7 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * At 0.0, no distance attenuation occurs with non-linear attenuation models.
  */
+public final static int AL_REFERENCE_DISTANCE = 0x1020;
 
 /**
  * Source rolloff factor.
@@ -224,6 +248,7 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * At 0.0, no distance attenuation ever occurs.
  */
+public final static int AL_ROLLOFF_FACTOR = 0x1021;
 
 /**
  * Outer cone gain.
@@ -234,6 +259,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The gain attenuation applied when the listener is outside of the source's
  * outer cone angle.
  */
+public final static int AL_CONE_OUTER_GAIN = 0x1022;
 
 /**
  * Source maximum distance.
@@ -245,12 +271,16 @@ public final static int AL_APIENTRY = __cdecl;
  * clamped distance model, or where attenuation reaches 0.0 gain for linear
  * distance models with a default rolloff factor.
  */
+public final static int AL_MAX_DISTANCE = 0x1023;
 
 /** Source buffer offset, in seconds */
+public final static int AL_SEC_OFFSET = 0x1024;
 
 /** Source buffer offset, in sample frames */
+public final static int AL_SAMPLE_OFFSET = 0x1025;
 
 /** Source buffer offset, in bytes */
+public final static int AL_BYTE_OFFSET = 0x1026;
 
 /**
  * Source type (query only).
@@ -265,46 +295,75 @@ public final static int AL_APIENTRY = __cdecl;
  * A Source is Undetermined when it has the NULL buffer attached using
  * AL_BUFFER.
  */
+public final static int AL_SOURCE_TYPE = 0x1027;
 
 /* Source type values. */
+public final static int AL_STATIC = 0x1028;
+
+public final static int AL_STREAMING = 0x1029;
+
+public final static int AL_UNDETERMINED = 0x1030;
 
 /** Unsigned 8-bit mono buffer format. */
+public final static int AL_FORMAT_MONO8 = 0x1100;
 
 /** Signed 16-bit mono buffer format. */
+public final static int AL_FORMAT_MONO16 = 0x1101;
 
 /** Unsigned 8-bit stereo buffer format. */
+public final static int AL_FORMAT_STEREO8 = 0x1102;
 
 /** Signed 16-bit stereo buffer format. */
+public final static int AL_FORMAT_STEREO16 = 0x1103;
 
 /** Buffer frequency/sample rate (query only). */
+public final static int AL_FREQUENCY = 0x2001;
 
 /** Buffer bits per sample (query only). */
+public final static int AL_BITS = 0x2002;
 
 /** Buffer channel count (query only). */
+public final static int AL_CHANNELS = 0x2003;
 
 /** Buffer data size in bytes (query only). */
+public final static int AL_SIZE = 0x2004;
 
 /* Buffer state. Not for public use. */
+public final static int AL_UNUSED = 0x2010;
+
+public final static int AL_PENDING = 0x2011;
+
+public final static int AL_PROCESSED = 0x2012;
 
 /** No error. */
+public final static int AL_NO_ERROR = 0;
 
 /** Invalid name (ID) passed to an AL call. */
+public final static int AL_INVALID_NAME = 0xA001;
 
 /** Invalid enumeration passed to AL call. */
+public final static int AL_INVALID_ENUM = 0xA002;
 
 /** Invalid value passed to AL call. */
+public final static int AL_INVALID_VALUE = 0xA003;
 
 /** Illegal AL call. */
+public final static int AL_INVALID_OPERATION = 0xA004;
 
 /** Not enough memory to execute the AL call. */
+public final static int AL_OUT_OF_MEMORY = 0xA005;
 
 /** Context string: Vendor name. */
+public final static int AL_VENDOR = 0xB001;
 
 /** Context string: Version. */
+public final static int AL_VERSION = 0xB002;
 
 /** Context string: Renderer name. */
+public final static int AL_RENDERER = 0xB003;
 
 /** Context string: Space-separated extension list. */
+public final static int AL_EXTENSIONS = 0xB004;
 
 /**
  * Doppler scale.
@@ -314,12 +373,14 @@ public final static int AL_APIENTRY = __cdecl;
  *
  * Scale for source and listener velocities.
  */
+public final static int AL_DOPPLER_FACTOR = 0xC000;
 
 /**
  * Doppler velocity (deprecated).
  *
  * A multiplier applied to the Speed of Sound.
  */
+public final static int AL_DOPPLER_VELOCITY = 0xC001;
 
 /**
  * Speed of Sound, in units per second.
@@ -330,6 +391,7 @@ public final static int AL_APIENTRY = __cdecl;
  * The speed at which sound waves are assumed to travel, when calculating the
  * doppler effect from source and listener velocities.
  */
+public final static int AL_SPEED_OF_SOUND = 0xC003;
 
 /**
  * Distance attenuation model.
@@ -349,81 +411,62 @@ public final static int AL_APIENTRY = __cdecl;
  * Clamped variations work like the non-clamped counterparts, except the
  * distance calculated is clamped between the reference and max distances.
  */
+public final static int AL_DISTANCE_MODEL = 0xD000;
 
 /* Distance model values. */
+public final static int AL_INVERSE_DISTANCE = 0xD001;
+
+public final static int AL_INVERSE_DISTANCE_CLAMPED = 0xD002;
+
+public final static int AL_LINEAR_DISTANCE = 0xD003;
+
+public final static int AL_LINEAR_DISTANCE_CLAMPED = 0xD004;
+
+public final static int AL_EXPONENT_DISTANCE = 0xD005;
+
+public final static int AL_EXPONENT_DISTANCE_CLAMPED = 0xD006;
 
 /* Renderer State management. */
-
 /* Context state setting. */
-
 /* Context state retrieval. */
-
 /**
  * Obtain the first error generated in the AL context since the last call to
  * this function.
  */
-
 /** Query for the presence of an extension on the AL context. */
-
 /**
  * Retrieve the address of a function. The returned function may be context-
  * specific.
  */
-
 /**
  * Retrieve the value of an enum. The returned value may be context-specific.
  */
-
 /* Set listener parameters. */
-
 /* Get listener parameters. */
-
 /** Create source objects. */
-
 /** Delete source objects. */
-
 /** Verify an ID is for a valid source. */
-
 /* Set source parameters. */
-
 /* Get source parameters. */
-
 /** Play, restart, or resume a source, setting its state to AL_PLAYING. */
-
 /** Stop a source, setting its state to AL_STOPPED if playing or paused. */
-
 /** Rewind a source, setting its state to AL_INITIAL. */
-
 /** Pause a source, setting its state to AL_PAUSED if playing. */
-
 /** Play, restart, or resume a list of sources atomically. */
-
 /** Stop a list of sources atomically. */
-
 /** Rewind a list of sources atomically. */
-
 /** Pause a list of sources atomically. */
-
 /** Queue buffers onto a source */
-
 /** Unqueue processed buffers from a source */
-
 /** Create buffer objects */
-
 /** Delete buffer objects */
-
 /** Verify an ID is a valid buffer (including the NULL buffer) */
-
 /**
  * Copies data into the buffer, interpreting it using the specified format and
  * samplerate.
  */
-
 /* Set buffer parameters. */
-
 /* Get buffer parameters. */
-
 /* Pointer-to-function types, useful for storing dynamically loaded AL entry
  * points.
  */
-
