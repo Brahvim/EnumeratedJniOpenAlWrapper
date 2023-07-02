@@ -1,0 +1,117 @@
+/* Listener properties. */
+
+/* Source properties. */
+
+/* Effect properties. */
+
+/* Reverb effect parameters */
+
+/* EAX Reverb effect parameters */
+
+/* Chorus effect parameters */
+
+/* Distortion effect parameters */
+
+/* Echo effect parameters */
+
+/* Flanger effect parameters */
+
+/* Frequency shifter effect parameters */
+
+/* Vocal morpher effect parameters */
+
+/* Pitchshifter effect parameters */
+
+/* Ringmodulator effect parameters */
+
+/* Autowah effect parameters */
+
+/* Compressor effect parameters */
+
+/* Equalizer effect parameters */
+
+/* Effect type */
+
+/* Effect types, used with the AL_EFFECT_TYPE property */
+
+/* Auxiliary Effect Slot properties. */
+
+/* NULL Auxiliary Slot ID to disable a source send. */
+
+/* Filter properties. */
+
+/* Lowpass filter parameters */
+
+/* Highpass filter parameters */
+
+/* Bandpass filter parameters */
+
+/* Filter type */
+
+/* Filter types, used with the AL_FILTER_TYPE property */
+
+/* Effect object function types. */
+
+/* Filter object function types. */
+
+/* Auxiliary Effect Slot object function types. */
+
+/* Filter ranges and defaults. */
+
+/* Lowpass filter */
+
+/* Highpass filter */
+
+/* Bandpass filter */
+
+/* Effect parameter ranges and defaults. */
+
+/* Standard reverb effect */
+
+/* EAX reverb effect */
+
+public final static int AL_EAXREVERB_DEFAULT_REFLECTIONS_PAN_XYZ = (0.0f);
+public final static int AL_EAXREVERB_DEFAULT_LATE_REVERB_PAN_XYZ = (0.0f);
+public final static int AL_EAXREVERB_DEFAULT_AIR_ABSORPTION_GAINHF = (0.994f);
+public final static int AL_EAXREVERB_DEFAULT_ROOM_ROLLOFF_FACTOR = (0.0f);
+/* Chorus effect */
+
+/* Distortion effect */
+
+/* Echo effect */
+
+/* Flanger effect */
+
+/* Frequency shifter effect */
+
+public final static int AL_FREQUENCY_SHIFTER_DEFAULT_LEFT_DIRECTION = (0);
+public final static int AL_FREQUENCY_SHIFTER_MIN_RIGHT_DIRECTION = (0);
+public final static int AL_FREQUENCY_SHIFTER_MAX_RIGHT_DIRECTION = (2);
+public final static int AL_FREQUENCY_SHIFTER_DEFAULT_RIGHT_DIRECTION = (0);
+/* Vocal morpher effect */
+
+public final static int AL_VOCAL_MORPHER_MIN_PHONEMEA_COARSE_TUNING = (-24);
+public final static int AL_VOCAL_MORPHER_MAX_PHONEMEA_COARSE_TUNING = (24);
+public final static int AL_VOCAL_MORPHER_DEFAULT_PHONEMEA_COARSE_TUNING = (0);
+public final static int AL_VOCAL_MORPHER_MIN_PHONEMEB_COARSE_TUNING = (-24);
+public final static int AL_VOCAL_MORPHER_MAX_PHONEMEB_COARSE_TUNING = (24);
+public final static int AL_VOCAL_MORPHER_DEFAULT_PHONEMEB_COARSE_TUNING = (0);
+/* Pitch shifter effect */
+
+/* Ring modulator effect */
+
+public final static int AL_RING_MODULATOR_DEFAULT_HIGHPASS_CUTOFF = (800.0f);
+/* Autowah effect */
+
+/* Compressor effect */
+
+/* Equalizer effect */
+
+/* Source parameter value ranges and defaults. */
+
+public final static int AL_DEFAULT_AUXILIARY_SEND_FILTER_GAIN_AUTO = AL_TRUE;
+public final static int AL_MIN_AUXILIARY_SEND_FILTER_GAINHF_AUTO = AL_FALSE;
+public final static int AL_MAX_AUXILIARY_SEND_FILTER_GAINHF_AUTO = AL_TRUE;
+public final static int AL_DEFAULT_AUXILIARY_SEND_FILTER_GAINHF_AUTO = AL_TRUE;
+/* Listener parameter value ranges and defaults. */
+

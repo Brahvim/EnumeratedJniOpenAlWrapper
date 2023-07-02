@@ -1,0 +1,141 @@
+/* Default Presets */
+
+public final static int EFX_REVERB_PRESET_GENERIC = \;
+public final static int EFX_REVERB_PRESET_PADDEDCELL = \;
+public final static int EFX_REVERB_PRESET_ROOM = \;
+public final static int EFX_REVERB_PRESET_BATHROOM = \;
+public final static int EFX_REVERB_PRESET_LIVINGROOM = \;
+public final static int EFX_REVERB_PRESET_STONEROOM = \;
+public final static int EFX_REVERB_PRESET_AUDITORIUM = \;
+public final static int EFX_REVERB_PRESET_CONCERTHALL = \;
+public final static int EFX_REVERB_PRESET_CAVE = \;
+public final static int EFX_REVERB_PRESET_ARENA = \;
+public final static int EFX_REVERB_PRESET_HANGAR = \;
+public final static int EFX_REVERB_PRESET_CARPETEDHALLWAY = \;
+public final static int EFX_REVERB_PRESET_HALLWAY = \;
+public final static int EFX_REVERB_PRESET_STONECORRIDOR = \;
+public final static int EFX_REVERB_PRESET_ALLEY = \;
+public final static int EFX_REVERB_PRESET_FOREST = \;
+public final static int EFX_REVERB_PRESET_CITY = \;
+public final static int EFX_REVERB_PRESET_MOUNTAINS = \;
+public final static int EFX_REVERB_PRESET_QUARRY = \;
+public final static int EFX_REVERB_PRESET_PLAIN = \;
+public final static int EFX_REVERB_PRESET_PARKINGLOT = \;
+public final static int EFX_REVERB_PRESET_SEWERPIPE = \;
+public final static int EFX_REVERB_PRESET_UNDERWATER = \;
+public final static int EFX_REVERB_PRESET_DRUGGED = \;
+public final static int EFX_REVERB_PRESET_DIZZY = \;
+public final static int EFX_REVERB_PRESET_PSYCHOTIC = \;
+/* Castle Presets */
+
+public final static int EFX_REVERB_PRESET_CASTLE_SMALLROOM = \;
+public final static int EFX_REVERB_PRESET_CASTLE_SHORTPASSAGE = \;
+public final static int EFX_REVERB_PRESET_CASTLE_MEDIUMROOM = \;
+public final static int EFX_REVERB_PRESET_CASTLE_LARGEROOM = \;
+public final static int EFX_REVERB_PRESET_CASTLE_LONGPASSAGE = \;
+public final static int EFX_REVERB_PRESET_CASTLE_HALL = \;
+public final static int EFX_REVERB_PRESET_CASTLE_CUPBOARD = \;
+public final static int EFX_REVERB_PRESET_CASTLE_COURTYARD = \;
+public final static int EFX_REVERB_PRESET_CASTLE_ALCOVE = \;
+/* Factory Presets */
+
+public final static int EFX_REVERB_PRESET_FACTORY_SMALLROOM = \;
+public final static int EFX_REVERB_PRESET_FACTORY_SHORTPASSAGE = \;
+public final static int EFX_REVERB_PRESET_FACTORY_MEDIUMROOM = \;
+public final static int EFX_REVERB_PRESET_FACTORY_LARGEROOM = \;
+public final static int EFX_REVERB_PRESET_FACTORY_LONGPASSAGE = \;
+public final static int EFX_REVERB_PRESET_FACTORY_HALL = \;
+public final static int EFX_REVERB_PRESET_FACTORY_CUPBOARD = \;
+public final static int EFX_REVERB_PRESET_FACTORY_COURTYARD = \;
+public final static int EFX_REVERB_PRESET_FACTORY_ALCOVE = \;
+/* Ice Palace Presets */
+
+public final static int EFX_REVERB_PRESET_ICEPALACE_SMALLROOM = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_SHORTPASSAGE = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_MEDIUMROOM = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_LARGEROOM = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_LONGPASSAGE = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_HALL = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_CUPBOARD = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_COURTYARD = \;
+public final static int EFX_REVERB_PRESET_ICEPALACE_ALCOVE = \;
+/* Space Station Presets */
+
+public final static int EFX_REVERB_PRESET_SPACESTATION_SMALLROOM = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_SHORTPASSAGE = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_MEDIUMROOM = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_LARGEROOM = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_LONGPASSAGE = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_HALL = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_CUPBOARD = \;
+public final static int EFX_REVERB_PRESET_SPACESTATION_ALCOVE = \;
+/* Wooden Galleon Presets */
+
+public final static int EFX_REVERB_PRESET_WOODEN_SMALLROOM = \;
+public final static int EFX_REVERB_PRESET_WOODEN_SHORTPASSAGE = \;
+public final static int EFX_REVERB_PRESET_WOODEN_MEDIUMROOM = \;
+public final static int EFX_REVERB_PRESET_WOODEN_LARGEROOM = \;
+public final static int EFX_REVERB_PRESET_WOODEN_LONGPASSAGE = \;
+public final static int EFX_REVERB_PRESET_WOODEN_HALL = \;
+public final static int EFX_REVERB_PRESET_WOODEN_CUPBOARD = \;
+public final static int EFX_REVERB_PRESET_WOODEN_COURTYARD = \;
+public final static int EFX_REVERB_PRESET_WOODEN_ALCOVE = \;
+/* Sports Presets */
+
+public final static int EFX_REVERB_PRESET_SPORT_EMPTYSTADIUM = \;
+public final static int EFX_REVERB_PRESET_SPORT_SQUASHCOURT = \;
+public final static int EFX_REVERB_PRESET_SPORT_SMALLSWIMMINGPOOL = \;
+public final static int EFX_REVERB_PRESET_SPORT_LARGESWIMMINGPOOL = \;
+public final static int EFX_REVERB_PRESET_SPORT_GYMNASIUM = \;
+public final static int EFX_REVERB_PRESET_SPORT_FULLSTADIUM = \;
+public final static int EFX_REVERB_PRESET_SPORT_STADIUMTANNOY = \;
+/* Prefab Presets */
+
+public final static int EFX_REVERB_PRESET_PREFAB_WORKSHOP = \;
+public final static int EFX_REVERB_PRESET_PREFAB_SCHOOLROOM = \;
+public final static int EFX_REVERB_PRESET_PREFAB_PRACTISEROOM = \;
+public final static int EFX_REVERB_PRESET_PREFAB_OUTHOUSE = \;
+public final static int EFX_REVERB_PRESET_PREFAB_CARAVAN = \;
+/* Dome and Pipe Presets */
+
+public final static int EFX_REVERB_PRESET_DOME_TOMB = \;
+public final static int EFX_REVERB_PRESET_PIPE_SMALL = \;
+public final static int EFX_REVERB_PRESET_DOME_SAINTPAULS = \;
+public final static int EFX_REVERB_PRESET_PIPE_LONGTHIN = \;
+public final static int EFX_REVERB_PRESET_PIPE_LARGE = \;
+public final static int EFX_REVERB_PRESET_PIPE_RESONANT = \;
+/* Outdoors Presets */
+
+public final static int EFX_REVERB_PRESET_OUTDOORS_BACKYARD = \;
+public final static int EFX_REVERB_PRESET_OUTDOORS_ROLLINGPLAINS = \;
+public final static int EFX_REVERB_PRESET_OUTDOORS_DEEPCANYON = \;
+public final static int EFX_REVERB_PRESET_OUTDOORS_CREEK = \;
+public final static int EFX_REVERB_PRESET_OUTDOORS_VALLEY = \;
+/* Mood Presets */
+
+public final static int EFX_REVERB_PRESET_MOOD_HEAVEN = \;
+public final static int EFX_REVERB_PRESET_MOOD_HELL = \;
+public final static int EFX_REVERB_PRESET_MOOD_MEMORY = \;
+/* Driving Presets */
+
+public final static int EFX_REVERB_PRESET_DRIVING_COMMENTATOR = \;
+public final static int EFX_REVERB_PRESET_DRIVING_PITGARAGE = \;
+public final static int EFX_REVERB_PRESET_DRIVING_INCAR_RACER = \;
+public final static int EFX_REVERB_PRESET_DRIVING_INCAR_SPORTS = \;
+public final static int EFX_REVERB_PRESET_DRIVING_INCAR_LUXURY = \;
+public final static int EFX_REVERB_PRESET_DRIVING_FULLGRANDSTAND = \;
+public final static int EFX_REVERB_PRESET_DRIVING_EMPTYGRANDSTAND = \;
+public final static int EFX_REVERB_PRESET_DRIVING_TUNNEL = \;
+/* City Presets */
+
+public final static int EFX_REVERB_PRESET_CITY_STREETS = \;
+public final static int EFX_REVERB_PRESET_CITY_SUBWAY = \;
+public final static int EFX_REVERB_PRESET_CITY_MUSEUM = \;
+public final static int EFX_REVERB_PRESET_CITY_LIBRARY = \;
+public final static int EFX_REVERB_PRESET_CITY_UNDERPASS = \;
+public final static int EFX_REVERB_PRESET_CITY_ABANDONED = \;
+/* Misc. Presets */
+
+public final static int EFX_REVERB_PRESET_DUSTYROOM = \;
+public final static int EFX_REVERB_PRESET_CHAPEL = \;
+public final static int EFX_REVERB_PRESET_SMALLWATERROOM = \;

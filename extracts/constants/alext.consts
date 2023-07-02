@@ -1,0 +1,110 @@
+/* Define int64 and uint64 types */
+
+/* Fallback if nothing above works */
+
+public final static int AL_LOKI_IMA_ADPCM_format = 1;
+public final static int AL_LOKI_WAVE_format = 1;
+public final static int AL_EXT_vorbis = 1;
+public final static int AL_LOKI_quadriphonic = 1;
+public final static int AL_EXT_float32 = 1;
+public final static int AL_EXT_double = 1;
+public final static int AL_EXT_MULAW = 1;
+public final static int AL_EXT_ALAW = 1;
+public final static int ALC_LOKI_audio_channel = 1;
+public final static int AL_EXT_MCFORMATS = 1;
+/* Provides support for surround sound buffer formats with 8, 16, and 32-bit
+ * samples.
+ *
+ * QUAD8: Unsigned 8-bit, Quadraphonic (Front Left, Front Right, Rear Left,
+ *        Rear Right).
+ * QUAD16: Signed 16-bit, Quadraphonic.
+ * QUAD32: 32-bit float, Quadraphonic.
+ * REAR8: Unsigned 8-bit, Rear Stereo (Rear Left, Rear Right).
+ * REAR16: Signed 16-bit, Rear Stereo.
+ * REAR32: 32-bit float, Rear Stereo.
+ * 51CHN8: Unsigned 8-bit, 5.1 Surround (Front Left, Front Right, Front Center,
+ *         LFE, Side Left, Side Right). Note that some audio systems may label
+ *         5.1's Side channels as Rear or Surround; they are equivalent for the
+ *         purposes of this extension.
+ * 51CHN16: Signed 16-bit, 5.1 Surround.
+ * 51CHN32: 32-bit float, 5.1 Surround.
+ * 61CHN8: Unsigned 8-bit, 6.1 Surround (Front Left, Front Right, Front Center,
+ *         LFE, Rear Center, Side Left, Side Right).
+ * 61CHN16: Signed 16-bit, 6.1 Surround.
+ * 61CHN32: 32-bit float, 6.1 Surround.
+ * 71CHN8: Unsigned 8-bit, 7.1 Surround (Front Left, Front Right, Front Center,
+ *         LFE, Rear Left, Rear Right, Side Left, Side Right).
+ * 71CHN16: Signed 16-bit, 7.1 Surround.
+ * 71CHN32: 32-bit float, 7.1 Surround.
+ */
+
+public final static int AL_EXT_MULAW_MCFORMATS = 1;
+public final static int AL_EXT_IMA4 = 1;
+public final static int AL_EXT_STATIC_BUFFER = 1;
+public final static int ALC_EXT_EFX = 1;
+public final static int ALC_EXT_disconnect = 1;
+public final static int ALC_EXT_thread_local_context = 1;
+public final static int AL_EXT_source_distance_model = 1;
+public final static int AL_SOFT_buffer_sub_data = 1;
+public final static int AL_SOFT_loop_points = 1;
+public final static int AL_EXT_FOLDBACK = 1;
+public final static int ALC_EXT_DEDICATED = 1;
+public final static int AL_EFFECT_DEDICATED_LOW_FREQUENCY_EFFECT = 0x9000;
+public final static int AL_SOFT_buffer_samples = 1;
+/* Channel configurations */
+
+/* Sample types */
+
+/* Storage formats */
+
+/* Buffer attributes */
+
+public final static int AL_SOFT_direct_channels = 1;
+public final static int ALC_SOFT_loopback = 1;
+/* Sample types */
+
+/* Channel configurations */
+
+public final static int AL_EXT_STEREO_ANGLES = 1;
+public final static int AL_EXT_SOURCE_RADIUS = 1;
+public final static int AL_SOFT_source_latency = 1;
+public final static int ALC_EXT_DEFAULT_FILTER_ORDER = 1;
+public final static int AL_SOFT_deferred_updates = 1;
+public final static int AL_SOFT_block_alignment = 1;
+public final static int AL_SOFT_MSADPCM = 1;
+public final static int AL_SOFT_source_length = 1;
+/*#define AL_BYTE_LENGTH_SOFT                      0x2009*/
+
+public final static int ALC_SOFT_pause_device = 1;
+public final static int AL_EXT_BFORMAT = 1;
+/* Provides support for B-Format ambisonic buffers (first-order, FuMa scaling
+ * and layout).
+ *
+ * BFORMAT2D_8: Unsigned 8-bit, 3-channel non-periphonic (WXY).
+ * BFORMAT2D_16: Signed 16-bit, 3-channel non-periphonic (WXY).
+ * BFORMAT2D_FLOAT32: 32-bit float, 3-channel non-periphonic (WXY).
+ * BFORMAT3D_8: Unsigned 8-bit, 4-channel periphonic (WXYZ).
+ * BFORMAT3D_16: Signed 16-bit, 4-channel periphonic (WXYZ).
+ * BFORMAT3D_FLOAT32: 32-bit float, 4-channel periphonic (WXYZ).
+ */
+
+public final static int AL_EXT_MULAW_BFORMAT = 1;
+public final static int ALC_SOFT_HRTF = 1;
+public final static int AL_SOFT_gain_clamp_ex = 1;
+public final static int ALC_SOFT_device_clock = 1;
+public final static int AL_SOFT_direct_channels_remix = 1;
+public final static int AL_SOFT_bformat_ex = 1;
+/* Ambisonic layouts */
+
+/* Ambisonic scalings (normalization) */
+
+public final static int ALC_SOFT_loopback_bformat = 1;
+/* Ambisonic layouts */
+
+/* Ambisonic scalings (normalization) */
+
+public final static int AL_SOFT_events = 1;
+/*#define ALC_MONO_SOFT                            0x1500*/
+
+/*#define ALC_QUAD_SOFT                            0x1503*/
+
